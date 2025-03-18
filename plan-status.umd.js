@@ -28,3 +28,4 @@ Expected function or array of functions, received type ${typeof e}.`),z)}functio
 **/function jl(){ll()}process.env.NODE_ENV!=="production"&&jl();const yr=Tl({props:{path:{type:String,required:!0}},setup(e){const t=hi("Loading..."),n=async()=>{try{const o=await(await fetch(e.path)).json();t.value=o.data??"?"}catch(s){console.error("Error fetching status:",s),t.value="Error loading status"}};return _o(async()=>{await n()}),()=>`<div>
         <p style="color: #ef4444;">${t.value}</p>
       </div>`}});return customElements.define("plan-status",yr),yr});
+ 
